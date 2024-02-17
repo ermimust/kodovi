@@ -1,0 +1,1 @@
+x = linspace(0, 1, 101);v2 = zeros(1, 101);v3 = zeros(1, 101);for i = 1:101;    v2(i) = chi0((x(i) - 1/2) / (1/2));    v3(i) = 1/2 * chi1((x(i) - 1/2) / (1/2));endplot(x, v2, 'b-', x, v3, 'g-');legend('v_2', 'v_3');grid;saveas(gcf, 'v2_v3.png');%ylim([-1 1]);
