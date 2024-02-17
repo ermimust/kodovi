@@ -1,0 +1,1 @@
+X = 0:0.01:1;alpha = 10;T0 = sinh(alpha * (1 - X)) / sinh(alpha);plot(X, T0);title(['\alpha = ' num2str(alpha)]);xlabel('X');ylabel('T_0');saveas(gcf, 'rj2.png');
